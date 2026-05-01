@@ -17,19 +17,19 @@ Run one Python script
 
 Why I Built This?
 -------------------
-Most data engineers prepare schemas and seeding test data — a slow, repetitive process. 
+Most data engineers prepare schemas and seeding test data that is a slow, repetitive process. 
 This project automates both steps using AI, showing how modern data engineers can use LLMs as core engineering tools, not just chatbots.
 
 Tech Stack
 ----------------
 Tool	                    |        Purpose
 -------------------------------------------------
-Python 3.10+	            |  Core scripting language
-Groq API                	|  AI schema and data generation
-MySQL                     |  Target database
-PyMySQL	                  |  MySQL connector
-SQLAlchemy	              |  Database inspection
-python-dotenv	            | Environment variable management
+* Python 3.10+	            |  Core scripting language
+* Groq API                	|  AI schema and data generation
+* MySQL                     |  Target database
+* PyMySQL	                  |  MySQL connector
+* SQLAlchemy	              |  Database inspection
+* python-dotenv	            | Environment variable management
 
 Getting Started
 =================
