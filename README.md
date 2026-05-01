@@ -13,7 +13,7 @@ Run one Python script
 * Groq AI generates realistic INSERT data
 * Python loads data with FK validation & error handling
 * Auto-detects empty tables and re-prompts AI with real IDs
-* Verified, populated database — ready to query
+* Verified, populated database and this database is ready to query
 
 Why I Built This?
 -------------------
@@ -36,9 +36,9 @@ Getting Started
 
 Prerequisites
 -------------------
-•	Python 3.10 or higher
-•	MySQL running locally
-•	Free Groq API key — get one at console.groq.com
+* Python 3.10 or higher
+* MySQL running locally
+* Free Groq API key. Get one at console.groq.com
 
 Installation
 ---------------
