@@ -8,12 +8,12 @@ Generate a fully populated MySQL database from a plain-English domain descriptio
 
 You describe the DOMAIN. The script handles everything else:
 
-1. Sends your domain description to Groq LLM API and gets back `CREATE TABLE` statements
-2. Executes the schema against a local MySQL instance
-3. Asks Groq again and gets realistic `INSERT` data with proper FK references
-4. Loads the data, catches any failures row-by-row
-5. Checks for empty tables and re-prompts with existing IDs to fill gaps
-6. Prints a final row-count summary
+1. Sends your domain description to Groq LLM API and gets back `CREATE TABLE` statements.
+2. Executes the schema against a local MySQL instance.
+3. Asks Groq again and gets realistic `INSERT` data with proper FK references.
+4. Loads the data, catches any failures row-by-row.
+5. Checks for empty tables and re-prompts with existing IDs to fill gaps.
+6. Prints a final row-count summary.
 
 Total time: ~15-20 seconds for a 10-table schema.
 
@@ -147,6 +147,6 @@ The retry pass is automatic. You shouldn't need to run the script twice.
 
 ## Notes
 
-- Each run drops and recreates `logistics_db`, so it's non-destructive to anything outside that database
-- FK checks are disabled during load and re-enabled on commit. If a statement still fails, it's logged to `builder.log` and skipped
-- `builder.log` is written alongside the script and has every table name, row count, and failed statement for debugging
+- Each run drops and recreates `logistics_db`, so it's non-destructive to anything outside that database.
+- FK checks are disabled during load and re-enabled on commit. If a statement still fails, it's logged to `builder.log` and skipped.
+- `builder.log` is written alongside the script and has every table name, row count, and failed statement for debugging.
