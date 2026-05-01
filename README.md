@@ -3,17 +3,17 @@ Generate Schema via Groq LLM
 
 What This Project Does?
 -------------------------
-This tool automatically designs and populates a MySQL database using AI — with zero manual SQL writing. You describe the domain, and the system handles the rest.
+This tool automatically designs and populates a MySQL database using AI with zero manual SQL writing. You describe the domain, and the system handles the rest.
 
 The flow looks like this:
 -------------------------------
 Run one Python script
-↓  Groq AI designs the schema (CREATE TABLE statements)
-↓  Python executes the schema against MySQL
-↓  Groq AI generates realistic INSERT data
-↓  Python loads data with FK validation & error handling
-↓  Auto-detects empty tables and re-prompts AI with real IDs
-↓  Verified, populated database — ready to query
+* Groq AI designs the schema (CREATE TABLE statements)
+* Python executes the schema against MySQL
+* Groq AI generates realistic INSERT data
+* Python loads data with FK validation & error handling
+* Auto-detects empty tables and re-prompts AI with real IDs
+* Verified, populated database — ready to query
 
 Why I Built This?
 -------------------
