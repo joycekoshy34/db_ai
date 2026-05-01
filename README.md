@@ -8,7 +8,7 @@ Generate a fully populated MySQL database from a plain-English domain descriptio
 
 You describe the DOMAIN. The script handles everything else:
 
-1. Sends your domain description to Groq LLM and gets back `CREATE TABLE` statements
+1. Sends your domain description to Groq LLM API and gets back `CREATE TABLE` statements
 2. Executes the schema against a local MySQL instance
 3. Asks Groq again and gets realistic `INSERT` data with proper FK references
 4. Loads the data, catches any failures row-by-row
@@ -30,7 +30,7 @@ Writing schemas and seeding test data by hand is slow and repetitive. This treat
 | Tool | Role |
 |---|---|
 | Python 3.10+ | Core scripting |
-| Groq API | Schema + data generation (LLaMA 3.3 70B) |
+| Groq API | Schema + data generation  |
 | MySQL | Target database |
 | PyMySQL | MySQL connector |
 | python-dotenv | Credential management |
